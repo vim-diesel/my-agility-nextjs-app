@@ -40,7 +40,7 @@ async function getData(): Promise<AgilityResponse> {
     console.error('Validation failed:', result.error);
     throw new Error('Invalid data format');
   }
-  console.log(result.data);
+  
   return result.data; // This is now type-safe and validated data
 }
 
